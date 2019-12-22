@@ -1,2 +1,2 @@
-# dfl
-Digital Fashion Lab
+# Fashion Lab Website
+fashionlab.ai
