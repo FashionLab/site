@@ -55,4 +55,4 @@ install:
   - yarn
 
 script:
-  - if [ "$TEST" = "JS" ]; then cd website && yarn && yarn lint && yarn test; fi
+  - if [ "$TEST" = "JS" ]; then yarn && yarn lint && yarn test; fi
