@@ -31,11 +31,14 @@ const styles = (theme) => ({
     display: 'flex',
     [theme.breakpoints.down('sm')]: {
       display: 'flex',
-      justifyContent: 'space-between',
+      flexDirection: 'row',
       alignItems: 'center',
     },
   },
-  link: { textDecoration: 'none', color: 'inherit' },
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
   productLogo: {
     display: 'inline-block',
     borderLeft: `1px solid ${theme.palette.grey.A100}`,
@@ -48,11 +51,20 @@ const styles = (theme) => ({
     marginLeft: 10,
     [theme.breakpoints.up('md')]: { paddingTop: '0.8em' },
   },
-  iconContainer:
-      { display: 'none', [theme.breakpoints.down('sm')]: { display: 'block' } },
-  iconButton: { float: 'right' },
-  tabContainer:
-      { marginLeft: 32, [theme.breakpoints.down('sm')]: { display: 'none' } },
+  iconContainer: {
+    display: 'none',
+    [theme.breakpoints.down('sm')]: {
+      display: 'block',
+      marginLeft: 'auto',
+    },
+  },
+  iconButton: {
+    float: 'right',
+  },
+  tabContainer: {
+    marginLeft: 32,
+    [theme.breakpoints.down('sm')]: { display: 'none' },
+  },
   tabItem: {
     paddingTop: 20,
     paddingBottom: 20,
