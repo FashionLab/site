@@ -19,7 +19,7 @@ const styles = (theme) => ({
   root: {
     flexGrow: 1,
     overflow: 'hidden',
-    background: 'url(background.jpg) no-repeat',
+    background: 'url(img/background.jpg) no-repeat',
     backgroundSize: 'cover',
   },
   grid: {
