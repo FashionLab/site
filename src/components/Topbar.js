@@ -37,19 +37,25 @@ const styles = (theme) => ({
   },
   link: {
     textDecoration: 'none',
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
     color: 'inherit',
+    height: '100%',
+    [theme.breakpoints.up('md')]: { paddingTop: '0.8em' },
   },
   productLogo: {
     display: 'inline-block',
     borderLeft: `1px solid ${theme.palette.grey.A100}`,
     marginLeft: 32,
     paddingLeft: 24,
-    [theme.breakpoints.up('md')]: { paddingTop: '1.5em' },
+    [theme.breakpoints.up('md')]: {
+      paddingTop: '1.5em',
+    },
   },
   tagline: {
     display: 'inline-block',
     marginLeft: 10,
-    [theme.breakpoints.up('md')]: { paddingTop: '0.8em' },
   },
   iconContainer: {
     display: 'none',
