@@ -181,11 +181,11 @@ class Main extends Component {
                     Human Design. Machine Intelligence.
                   </Typography>
                   <Typography variant="subtitle1" gutterBottom color="primary">
-                    A.I. for fashion design, trend forecasting, and brand management.
+                    State of the art machine learning models for fashion design, trend forecasting, and brand management.
 
                     From trademark infringement detection to automated design
-                    portfolio development, our tools leverage state of the art
-                    machine learning models to deliver unique value.
+                    portfolio development, our tools leverage generative adversarial models
+                    (GANs) to deliver unique value.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>
