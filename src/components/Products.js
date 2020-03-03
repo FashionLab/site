@@ -40,7 +40,8 @@ const Products = (props) => {
         <Grid container justify="center">
           <Grid spacing={10} alignItems="center" justify="center" container className={classes.grid}>
             <Grid item xs={12}>
-              <SectionHeader title="Products" subtitle="An overview of our suite of products." />
+              <SectionHeader title="Background" subtitle="Our products are built using generative adversarial networks trained on targetted slices of a proprietary dataset of millions of images. Underneath these models, we build data ingestion pipelines, annotation tooling, feature engineering pipelines, and other software products to keep our products up to date with the latest trends." />
+              <SectionHeader title="Products" subtitle="An overview of our current suite of products." />
               <Blender />
               <Seasons />
               <Distinct />
