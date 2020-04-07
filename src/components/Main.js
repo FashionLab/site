@@ -40,19 +40,21 @@ const styles = (theme) => ({
   paper: {
     minHeight: 20,
     textAlign: 'left',
-    color: theme.palette.secondary.dark,
+    color: theme.palette.secondary.light,
     padding: 10,
-    backgroundColor: 'rgba(0, 0, 0, .4)',
+    backgroundColor: 'rgba(60, 72, 78, .8)',
   },
   paperDark: {
     minHeight: 20,
     textAlign: 'left',
-    color: theme.palette.text.secondary,
+    color: theme.palette.secondary.main,
     padding: 10,
     backgroundColor: 'rgba(0, 0, 0, .8)',
   },
   mainTitle: {
-    color: theme.palette.secondary.dark,
+    color: theme.palette.secondary.light,
+    '-webkit-text-stroke-width': '1px',
+    '-webkit-text-stroke-color': theme.palette.secondary.main,
   },
   title: {
     color: theme.palette.secondary.light,
@@ -167,25 +169,25 @@ class Main extends Component {
             <Grid item xs={12}>
               <Paper className={classes.paperMain}>
                 <div className={classes.boxMain}>
-                  <Typography style={{ fontWeight: 'bold' }} variant="h2" className={classes.mainTitle} gutterBottom>
+                  <Typography style={{ fontWeight: 'bold' }} variant="h1" className={classes.mainTitle} gutterBottom>
                       Intelligent Design.
                   </Typography>
-                  <Typography variant="subtitle1" color="primary" gutterBottom />
+                  <Typography variant="h2" color="primary" gutterBottom />
                 </div>
               </Paper>
             </Grid>
             <Grid item xs={12}>
               <Paper className={classes.paperDark}>
                 <div className={classes.box}>
-                  <Typography variant="h6" className={classes.title} gutterBottom>
+                  <Typography variant="h3" className={classes.title} gutterBottom>
                     Human Design. Machine Intelligence.
                   </Typography>
-                  <Typography variant="subtitle1" gutterBottom color="primary">
-                    State of the art machine learning models for fashion design, trend forecasting, and brand management.
+                  <Typography variant="h6" gutterBottom color="primary">
+                    State of the art machine learning models for fashion design,
+                    trend forecasting, and brand management.
 
                     From trademark infringement detection to automated design
-                    portfolio development, our tools leverage generative adversarial models
-                    (GANs) to deliver unique value.
+                    portfolio development, and everything in between.
                   </Typography>
                 </div>
                 <div className={classes.buttonBar}>
@@ -198,10 +200,10 @@ class Main extends Component {
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <div className={classes.box}>
-                  <Typography variant="h6" className={classes.titleLight} gutterBottom>
+                  <Typography variant="h3" className={classes.titleLight} gutterBottom>
                     Tailor-Made tools.
                   </Typography>
-                  <Typography variant="body1" gutterBottom color="primary">
+                  <Typography variant="h5" gutterBottom color="primary">
                     FashionLab provides a platform to help designers, not replace them.
 
                     Contact us to see how our tools can unlock your creative potential.

@@ -22,7 +22,7 @@ const styles = (theme) => ({
     overflow: 'hidden',
     backgroundSize: 'cover',
     backgroundPosition: '0 400px',
-    paddingBottom: 400,
+    paddingBottom: 200,
   },
   grid: {
     margin: `0 ${theme.spacing(2)}px`,
@@ -62,7 +62,6 @@ class AboutUs extends Component {
   render() {
     const { classes, location } = this.props;
     const currentPath = location.pathname;
-
     return (
       <>
         <CssBaseline />
@@ -75,8 +74,49 @@ class AboutUs extends Component {
                   <div className={classes.block}>
                     <Typography variant="h6" gutterBottom>About Us</Typography>
                     <Typography variant="body1">
-                      FashionLab is developed in New York City by a team with background in fashion,
+                      FashionLab is developed in New York City by a small team with background in fashion,
                       design, brand management, machine learning, and software engineering.
+                    </Typography>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={12}>
+                <div className={classes.topBar}>
+                  <div className={classes.block}>
+                    <Typography variant="h6" gutterBottom>What we do</Typography>
+                    <Typography variant="body1">
+                      Our work falls into several categories:
+                      <ul>
+                        <li>
+                          <strong>Machine Learning</strong>
+: Our products are built on generative adversarial neural networks (GANs)
+                        </li>
+                        <li>
+                          <strong>Data Engineering and Infrastructure</strong>
+: Our models are built with millions of images, which requires robust and performant data pipelines
+                        </li>
+                        <li>
+                          <strong>Product and Business Development</strong>
+: The fashion landscape is constantly evolving, and our products and brand relationships must evolve with it.
+                        </li>
+                        <li>
+                          <strong>Legal</strong>
+: Leveraging our models to not only to build your brand, but to protect it.
+                        </li>
+                      </ul>
+                    </Typography>
+                  </div>
+                </div>
+              </Grid>
+              <Grid item xs={12}>
+                <div className={classes.topBar}>
+                  <div className={classes.block}>
+                    <Typography variant="h6" gutterBottom>Join us</Typography>
+                    <Typography variant="body1">
+                      Sign up for more information on our products using the link below.
+                      <br />
+                      <br />
+                      Interested in joining our team? Send us a quick email and we'll connect with you about hiring opportunities.
                     </Typography>
                   </div>
                 </div>
@@ -85,6 +125,11 @@ class AboutUs extends Component {
                 <Grid item xs={12}>
                   <div className={classes.topBar}>
                     <div>
+                      <a style={{ textDecoration: 'none' }} href="https://github.com/FashionLab">
+                        <Button variant="outlined" className={classes.outlinedButtom}>
+                        Github
+                        </Button>
+                      </a>
                       <Button variant="outlined" component={Link} to="/signup" className={classes.outlinedButtom}>
                         Sign Up
                       </Button>
