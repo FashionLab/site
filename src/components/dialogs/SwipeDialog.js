@@ -110,7 +110,7 @@ class SwipeDialog extends Component {
           </div>
           <div>
             <Button component={Link} to="/products" variant="contained" onClick={this.handleClose} color="primary" autoFocus>
-                All Products
+              All Products
             </Button>
           </div>
         </div>

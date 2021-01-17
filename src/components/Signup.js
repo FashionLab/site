@@ -189,10 +189,10 @@ class Signup extends Component {
                       <div>
                         <div style={{ marginBottom: 32 }}>
                           <Typography variant="subtitle1" style={{ fontWeight: 'bold' }} gutterBottom>
-                              Name
+                            Name
                           </Typography>
                           <Typography variant="body1" gutterBottom>
-                              Please enter your Name
+                            Please enter your Name
                           </Typography>
                         </div>
                         <div>
@@ -219,10 +219,10 @@ class Signup extends Component {
                       <div>
                         <div style={{ marginBottom: 32 }}>
                           <Typography variant="subtitle1" style={{ fontWeight: 'bold' }} gutterBottom>
-                              Email Address
+                            Email Address
                           </Typography>
                           <Typography variant="body1" gutterBottom>
-                              Please enter your preferred contact address
+                            Please enter your preferred contact address
                           </Typography>
                         </div>
                         <div>
@@ -255,7 +255,7 @@ class Signup extends Component {
                             We utilize MailChimp for our marketing. Clicking Submit below will redirect you to their site to finish subscribing.
                           </Typography>
                           <Typography variant="body1" color="secondary" gutterBottom>
-                              Please see our privacy policy for more information about what data we collect.
+                            Please see our privacy policy for more information about what data we collect.
                           </Typography>
                         </div>
                       </div>
@@ -299,7 +299,7 @@ class Signup extends Component {
                       className={classes.backButton}
                       size="large"
                     >
-                         Back
+                      Back
                     </Button>
                     { activeStep === 0 ? (
                       <Button
@@ -332,7 +332,7 @@ class Signup extends Component {
                         style={{ background: classes.button, color: 'white' }}
                         size="large"
                       >
-                          Submit
+                        Submit
                       </Button>
                     ))}
                   </div>

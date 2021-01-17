@@ -170,7 +170,7 @@ class Main extends Component {
               <Paper className={classes.paperMain}>
                 <div className={classes.boxMain}>
                   <Typography style={{ fontWeight: 'bold' }} variant="h1" className={classes.mainTitle} gutterBottom>
-                      Intelligent Design.
+                    Intelligent Design.
                   </Typography>
                   <Typography variant="h2" color="primary" gutterBottom />
                 </div>

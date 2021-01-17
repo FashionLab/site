@@ -48,7 +48,7 @@ const Footer = (props) => {
             {
         /* <img width={20} src={logo} alt="" /> */}
             <span>
-        FashionLab
+              FashionLab
             </span>
           </Link>
         </Typography>

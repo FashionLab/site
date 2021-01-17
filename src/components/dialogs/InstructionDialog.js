@@ -30,8 +30,8 @@ class InstructionDialog extends Component {
         <div className={classes.bottomMargin}>
           <Typography variant="body2" gutterBottom>
             Sign up to receive more information about our
-             ongoing product development, or send us an email
-             for a private demo.
+            ongoing product development, or send us an email
+            for a private demo.
           </Typography>
         </div>
         <Button component={Link} to="/signup" className={classes.bottomMargin} variant="contained" onClick={this.handleClose} color="primary" autoFocus>

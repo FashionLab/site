@@ -55,7 +55,6 @@ const styles = (theme) => ({
   },
 });
 
-
 class AboutUs extends Component {
   componentDidMount() {}
 
@@ -89,19 +88,19 @@ class AboutUs extends Component {
                       <ul>
                         <li>
                           <strong>Machine Learning</strong>
-: Our products are built on generative adversarial neural networks (GANs)
+                          : Our products are built on generative adversarial neural networks (GANs)
                         </li>
                         <li>
                           <strong>Data Engineering and Infrastructure</strong>
-: Our models are built with millions of images, which requires robust and performant data pipelines
+                          : Our models are built with millions of images, which requires robust and performant data pipelines
                         </li>
                         <li>
                           <strong>Product and Business Development</strong>
-: The fashion landscape is constantly evolving, and our products and brand relationships must evolve with it.
+                          : The fashion landscape is constantly evolving, and our products and brand relationships must evolve with it.
                         </li>
                         <li>
                           <strong>Legal</strong>
-: Leveraging our models to not only to build your brand, but to protect it.
+                          : Leveraging our models to not only to build your brand, but to protect it.
                         </li>
                       </ul>
                     </Typography>
@@ -116,7 +115,7 @@ class AboutUs extends Component {
                       Sign up for more information on our products using the link below.
                       <br />
                       <br />
-                      Interested in joining our team? Send us a quick email and we'll connect with you about hiring opportunities.
+                      Interested in joining our team? Send us a quick email and we%apos;ll connect with you about hiring opportunities.
                     </Typography>
                   </div>
                 </div>
@@ -127,7 +126,7 @@ class AboutUs extends Component {
                     <div>
                       <a style={{ textDecoration: 'none' }} href="https://github.com/FashionLab">
                         <Button variant="outlined" className={classes.outlinedButtom}>
-                        Github
+                          Github
                         </Button>
                       </a>
                       <Button variant="outlined" component={Link} to="/signup" className={classes.outlinedButtom}>

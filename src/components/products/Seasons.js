@@ -81,7 +81,7 @@ const CardItem = (props) => {
           <div className={classes.baseline}>
             <div className={classes.inline}>
               <Typography style={{ textTransform: 'uppercase' }} color="secondary" gutterBottom>
-                                    Seasons
+                Seasons
               </Typography>
               <Typography variant="body1" color="secondary" gutterBottom>
                 {products[1].description}
