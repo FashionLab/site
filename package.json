@@ -51,6 +51,8 @@
     "eslint-plugin-react-hooks": "^3.0.0"
   },
   "resolutions": {
-    "kind-of": "^6.0.3"
+    "kind-of": "^6.0.3",
+    "object-path": "^0.11.5",
+    "node-notifier": "^8.0.1"
   }
 }
