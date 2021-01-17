@@ -19,6 +19,7 @@ const styles = (theme) => ({
   root: {
     flexGrow: 1,
     backgroundColor: theme.palette.grey['100'],
+    minHeight: '94vh',
     overflow: 'hidden',
     backgroundSize: 'cover',
     backgroundPosition: '0 400px',

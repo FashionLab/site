@@ -30,7 +30,7 @@ const styles = (theme) => ({
     },
   },
   paperMain: {
-    minHeight: '60vh',
+    minHeight: '70vh',
     width: '100%',
     textAlign: 'left',
     color: theme.palette.text.secondary,
@@ -38,23 +38,34 @@ const styles = (theme) => ({
     backgroundColor: 'rgba(0, 0, 0, .1)',
   },
   paper: {
-    minHeight: 20,
+    minHeight: 500,
+    display: 'flex',
+    flexDirection: 'column',
     textAlign: 'left',
     color: theme.palette.secondary.light,
-    padding: 10,
+    padding: 50,
     backgroundColor: 'rgba(60, 72, 78, .8)',
   },
   paperDark: {
-    minHeight: 20,
+    minHeight: 500,
+    display: 'flex',
+    flexDirection: 'column',
     textAlign: 'left',
     color: theme.palette.secondary.main,
-    padding: 10,
+    padding: 50,
     backgroundColor: 'rgba(0, 0, 0, .8)',
   },
   mainTitle: {
+    // color: theme.palette.secondary.light,
     color: theme.palette.secondary.light,
-    '-webkit-text-stroke-width': '1px',
-    '-webkit-text-stroke-color': theme.palette.secondary.main,
+    '-webkit-text-stroke-width': '.5px',
+    '-webkit-text-stroke-color': theme.palette.secondary.dark,
+    fontSmooth: 'always',
+    fontWeight: 'bold',
+    fontSize: '180px',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '100px',
+    },
   },
   title: {
     color: theme.palette.secondary.light,
@@ -93,7 +104,6 @@ const styles = (theme) => ({
     padding: theme.spacing(2),
   },
   box: {
-    marginBottom: 40,
     margin: 'auto',
     maxWidth: 1000,
   },
@@ -169,7 +179,7 @@ class Main extends Component {
             <Grid item xs={12}>
               <Paper className={classes.paperMain}>
                 <div className={classes.boxMain}>
-                  <Typography style={{ fontWeight: 'bold' }} variant="h1" className={classes.mainTitle} gutterBottom>
+                  <Typography variant="h1" className={classes.mainTitle} gutterBottom>
                     Intelligent Design.
                   </Typography>
                   <Typography variant="h2" color="primary" gutterBottom />
