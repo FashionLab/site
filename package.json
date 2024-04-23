@@ -30,7 +30,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/styles": "^4.11.4",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^5.0.0",
     "numeral": "^2.0.6",
     "prop-types": "^15.7.2",
     "query-string": "^7.0.1",
