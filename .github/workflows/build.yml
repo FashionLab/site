@@ -4,33 +4,35 @@ on:
   push:
     branches:
       - main
+    tags:
+      - v*
+    paths-ignore:
+      - CONTRIBUTING.md
+      - LICENSE
+      - README.md
   pull_request:
-  schedule:
-    # run on sunday nights
-    - cron:  '0 0 * * 0'
 
 concurrency:
-   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
-   cancel-in-progress: true
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        node-version: [12.x]
+        os: [ubuntu-latest]
+        node-version: [20.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install -g yarn
-    - run: yarn
-    - run: yarn build
-    - run: yarn lint
-    - run: yarn test
-      env:
-        CI: true
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+          package_json_file: package.json
+      - run: pnpm install
+      - run: npx playwright install
+      - run: pnpm run build
+      - run: pnpm run lint
+      - run: pnpm run test
