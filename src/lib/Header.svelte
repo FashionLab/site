@@ -18,7 +18,7 @@
 					<a href="/" class="flex items-center py-4 px-2">
 						<img src="/favicon.png" alt="Logo" class="h-4 w-4 mr-2" />
 						<span
-							class="tracking-widest leading-tight font-normal text-neutral-300 text-lg"
+							class="tracking-widest leading-tight font-normal text-lg"
 							class:text-black={y < 50}
 							class:text-white={y >= 50}>FashionLab</span
 						>
@@ -31,7 +31,7 @@
 				<div class="hidden md:flex items-center space-x-1">
 					<a
 						href="#about"
-						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-200 hover:bg-neutral-600 transition duration-300"
+						class="py-2 px-2 rounded font-semibold hover:text-neutral-200 hover:bg-neutral-600 transition duration-300"
 						class:text-black={y < 50}
 						class:text-white={y >= 50}>About</a
 					>
@@ -41,7 +41,7 @@
 				<div class="hidden md:flex items-center space-x-3">
 					<a
 						href="#contact"
-						class="py-2 px-2 rounded text-neutral-300 font-semibold hover:text-neutral-200 hover:bg-neutral-600 transition duration-300"
+						class="py-2 px-2 rounded font-semibold hover:text-neutral-200 hover:bg-neutral-600 transition duration-300"
 						class:text-black={y < 50}
 						class:text-white={y >= 50}>Contact</a
 					>
