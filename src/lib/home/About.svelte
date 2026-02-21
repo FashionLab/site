@@ -26,8 +26,8 @@
 			<h5 class="text-lg font-bold mb-4">blender</h5>
 			<p class="text-gray-400">
 				<span class="italic">blender</span> is a tool for deriving stylistically similar items from a
-				given collection, within a single product category (e.g. construct a "chunky sneaker" design from
-				a set of inspirations).
+				given collection, within a single product category (e.g. construct a "chunky sneaker" design
+				from a set of inspirations).
 			</p>
 		</div>
 		<div class="mb-12">
@@ -97,8 +97,8 @@
 			<h5 class="text-lg font-bold mb-4">antitrademark</h5>
 			<p class="text-gray-400">
 				<span class="italic">antitrademark</span> is a tool for monitoring images (e.g. on social media,
-				or from a given portfolio) to ensure brand-specific design elements are not included (or the inverse,
-				for advertising).
+				or from a given portfolio) to ensure brand-specific design elements are not included (or the
+				inverse, for advertising).
 			</p>
 		</div>
 	</div>
