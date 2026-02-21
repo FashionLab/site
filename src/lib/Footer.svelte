@@ -2,6 +2,7 @@
 	<div class="container flex justify-center mb-2 px-6 w-1/2 m-auto">
 		<a
 			href="https://github.com/fashionlab"
+			aria-label="FashionLab on GitHub"
 			type="button"
 			class="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 mx-2"
 		>
