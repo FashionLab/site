@@ -51,6 +51,7 @@
 			<!-- Mobile menu button -->
 			<div class="md:hidden flex items-center">
 				<button
+					aria-label="Toggle mobile menu"
 					class="outline-none mobile-menu-button text-neutral-300 hover:text-neutral-500"
 					class:text-black={y < 50}
 					class:text-white={y >= 50}
